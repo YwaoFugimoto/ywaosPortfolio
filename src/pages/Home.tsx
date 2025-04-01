@@ -14,7 +14,10 @@ function Home() {
   const changeRouteToMusify = () => {
     window.open("https://github.com/YwaoFugimoto/projectSocial", "_blank");
   };
-  
+
+  const changeRouteToSpotfy = () => {
+    window.open("https://open.spotify.com/playlist/4QGwu3gfSwhLQBqzHKGc9D?si=6YRo8rCzTS29w-qukkBDoA", "_blank");    
+  };
 
   return (
     <>
@@ -34,17 +37,17 @@ function Home() {
                 aria-current="true"
                 aria-label="Slide 1"
               ></button>
-              <button
+              {/* <button
                 type="button"
                 data-bs-target="#carouselExampleCaptions"
                 data-bs-slide-to="1"
                 aria-label="Slide 2"
-              ></button>
+              ></button> */}
               <button
                 type="button"
                 data-bs-target="#carouselExampleCaptions"
-                data-bs-slide-to="2"
-                aria-label="Slide 3"
+                data-bs-slide-to="1" // 2
+                aria-label="Slide 2" // 3
               ></button>
             </div>
 
@@ -73,24 +76,7 @@ function Home() {
 
               {/* SEGUNDA JANELA  */}
 
-              <div className="carousel-item">
-                <div className="carousel-background">
-                  <img
-                    src={image_musify}
-                    className="carousel-image"
-                    alt="Musify"
-                  />
-                </div>
-                <div className="carousel-caption d-none d-md-block">
-                  <h5>Musify</h5>
-                  <p>
-                    Uma rede social focada em compartilhar letras de música.
-                  </p>
-                  <button className="btn btn-secondary" onClick={changeRoute}>
-                    Abrir
-                  </button>
-                </div>
-              </div>
+
 
               {/* TERCEIRA JANELA CARREGANDO DEFAULT */}
 
@@ -104,7 +90,7 @@ function Home() {
                 <div className="carousel-caption d-none d-md-block">
                   <h5>Em breve</h5>
                   <p>Projeto em desenvolvimento...</p>
-                  <button className="btn btn-secondary" onClick={changeRoute}>
+                  <button className="btn btn-secondary" onClick={changeRouteToSpotfy}>
                     Aguardar
                   </button>
                 </div>
