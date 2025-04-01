@@ -17,3 +17,5 @@ Este é o meu portfólio, desenvolvido com React e TypeScript (TSX), utilizando 
 - **CSS** – Estilização customizada com animações e media queries.
 
 ## Acesse 
+https://ywaofugimoto.github.io/ywaosPortfolio/
+
