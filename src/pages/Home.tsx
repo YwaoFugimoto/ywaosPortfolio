@@ -2,14 +2,14 @@ import "../main.css";
 import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap/dist/js/bootstrap.js";
 import image_musify from "../assets/images/musify.png";
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 
 function Home() {
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
 
-  const changeRoute = () => {
-    navigate("/project1");
-  };
+  // const changeRoute = () => {
+  //   navigate("/project1");
+  // };
 
   const changeRouteToMusify = () => {
     window.open("https://github.com/YwaoFugimoto/projectSocial", "_blank");
