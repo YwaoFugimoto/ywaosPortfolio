@@ -134,7 +134,7 @@ function Home() {
               />
               <a
                 className="text-secondary text-decoration-none"
-                href="https://github.com/MeuUsuario"
+                href="https://github.com/ywaofugimoto"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -149,7 +149,7 @@ function Home() {
               />
               <a
                 className="text-secondary text-decoration-none"
-                href="https://www.linkedin.com/in/MeuUsuario"
+                href="https://www.linkedin.com/in/ywaofugimoto"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -164,7 +164,7 @@ function Home() {
               />
               <a
                 className="text-secondary text-decoration-none"
-                href="mailto:meuemail@example.com"
+                href="mailto:fugimoto.ywao@gmail.com"
               >
                 fugimoto.ywao@gmail.com
               </a>
