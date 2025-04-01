@@ -11,7 +11,7 @@ createRoot(document.getElementById("root")!).render(
   <BrowserRouter>
     <Routes>
       <Route index element={<Home />} />
-      <Route path="/home" element={<Home />} />
+      <Route path="/ywaosPortfolio" element={<Home />} />
       <Route path="/project1" element={<Proj1 />}></Route>
     </Routes>
   </BrowserRouter>
