@@ -2,21 +2,23 @@ import "../main.css";
 import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap/dist/js/bootstrap.js";
 import image_musify from "../assets/images/musify.png";
-// import { useNavigate } from "react-router-dom";
+import image_library from '../assets/images/library.png'
 
 function Home() {
-  // const navigate = useNavigate();
-
-  // const changeRoute = () => {
-  //   navigate("/project1");
-  // };
 
   const changeRouteToMusify = () => {
     window.open("https://github.com/YwaoFugimoto/projectSocial", "_blank");
   };
 
   const changeRouteToSpotfy = () => {
-    window.open("https://open.spotify.com/playlist/4QGwu3gfSwhLQBqzHKGc9D?si=6YRo8rCzTS29w-qukkBDoA", "_blank");    
+    window.open(
+      "https://open.spotify.com/playlist/4QGwu3gfSwhLQBqzHKGc9D?si=6YRo8rCzTS29w-qukkBDoA",
+      "_blank"
+    );
+  };
+
+  const changeRouteToLibrary = () => {
+    window.open("https://github.com/YwaoFugimoto/library-project", "_blank");
   };
 
   return (
@@ -37,17 +39,17 @@ function Home() {
                 aria-current="true"
                 aria-label="Slide 1"
               ></button>
-              {/* <button
+              <button
                 type="button"
                 data-bs-target="#carouselExampleCaptions"
                 data-bs-slide-to="1"
                 aria-label="Slide 2"
-              ></button> */}
+              ></button>
               <button
                 type="button"
                 data-bs-target="#carouselExampleCaptions"
-                data-bs-slide-to="1" // 2
-                aria-label="Slide 2" // 3
+                data-bs-slide-to="2" // 2
+                aria-label="Slide 3" // 3
               ></button>
             </div>
 
@@ -68,15 +70,37 @@ function Home() {
                   <p>
                     Uma rede social focada em compartilhar letras de música.
                   </p>
-                  <button className="btn btn-secondary" onClick={changeRouteToMusify}>
+                  <button
+                    className="btn btn-secondary"
+                    onClick={changeRouteToMusify}
+                  >
                     Abrir
                   </button>
                 </div>
               </div>
 
               {/* SEGUNDA JANELA  */}
-
-
+              <div className="carousel-item">
+                <div className="carousel-background">
+                  <img
+                    src={image_library}
+                    className="carousel-image"
+                    alt="library"
+                  />
+                </div>
+                <div className="carousel-caption d-none d-md-block">
+                  <h5>On-line library</h5>
+                  <p>
+                    Aplicação web voltada para a gestão de bibliotecas virtuais.
+                  </p>
+                  <button
+                    className="btn btn-secondary"
+                    onClick={changeRouteToLibrary}
+                  >
+                    Abrir
+                  </button>
+                </div>
+              </div>
 
               {/* TERCEIRA JANELA CARREGANDO DEFAULT */}
 
@@ -90,7 +114,10 @@ function Home() {
                 <div className="carousel-caption d-none d-md-block">
                   <h5>Em breve</h5>
                   <p>Projeto em desenvolvimento...</p>
-                  <button className="btn btn-secondary" onClick={changeRouteToSpotfy}>
+                  <button
+                    className="btn btn-secondary"
+                    onClick={changeRouteToSpotfy}
+                  >
                     Aguardar
                   </button>
                 </div>
